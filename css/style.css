@@ -1,5 +1,14 @@
 * {
-  font-family: "Phoreus Cherokee"
+  font-family: "Proxima Nova";
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-y: hidden;
 }
 
 .navbar {
@@ -11,6 +20,7 @@
   height: 100px;
   background-color: #384260;
   border: 0px;
+  border-bottom: 5px solid #FFFFFF;
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
@@ -19,7 +29,8 @@
   letter-spacing: 1px;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:focus {
   color: #FFFFFF;
   opacity: 0.8;
   background-color: transparent;
@@ -30,6 +41,22 @@
   color: #FFFFFF;
 }
 
+.navbar-nav>li>.dropdown-menu {
+  background-color: #384260;
+  color: #FFFFFF;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.dropdown-menu>li>a {
+  color: #FFFFFF;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  color: #FFFFFF;
+  opacity: 0.8;
+  background-color: transparent;
+}
 
 .carousel-control.left, .carousel-control.right {
   background-image: none
@@ -40,4 +67,45 @@
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.carousel-caption {
+  transform: translateX(-50%) translateY(-25%);
+  top: 50%;
+  left: 50%;
+}
+
+.carousel-caption>h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+.carousel-caption>p {
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.carousel-caption>button {
+  width: 50%;
+  padding: 10px 0 10px 0;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+.carousel-caption>button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 2px solid #FFFFFF;
 }
