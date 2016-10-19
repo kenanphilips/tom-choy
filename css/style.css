@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
 }
 
 .navbar {
@@ -27,14 +27,22 @@ body {
   margin-top: 25px;
   color: #FFFFFF;
   letter-spacing: 1px;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:focus {
-  color: #FFFFFF;
-  opacity: 0.8;
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active {
+  color: #FCB332;
   background-color: transparent;
 }
+
+ .navbar-default .navbar-brand:focus {
+   color: #FFFFFF;
+ }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   background-color: transparent;
@@ -46,15 +54,22 @@ body {
   color: #FFFFFF;
   border: 0px;
   border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .dropdown-menu>li>a {
   color: #FFFFFF;
+  -webkit-transition: ease-in-out 0.1s;
+  -moz-transition: ease-in-out 0.1s;
+  -o-transition: ease-in-out 0.1s;
+  -ms-transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.1s;
 }
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-  color: #FFFFFF;
-  opacity: 0.8;
+  color: #FCB332;
   background-color: transparent;
 }
 
@@ -63,16 +78,18 @@ body {
 }
 
 #carousel {
-  position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
 .carousel-caption {
-  transform: translateX(-50%) translateY(-25%);
+  transform: translateX(-50%) translateY(-50%);
   top: 50%;
   left: 50%;
+}
+
+#slide1 {
+  width: 100%;
 }
 
 .carousel-caption>h1 {
@@ -82,10 +99,17 @@ body {
   font-size: 50px;
 }
 
+.carousel-caption>h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
 .carousel-caption>p {
   letter-spacing: 1px;
   font-size: 20px;
   padding-bottom: 15px;
+  font-weight: lighter;
 }
 
 .carousel-caption>button {
@@ -97,6 +121,7 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 2px;
+  font-weight: lighter;
   -webkit-transition: ease-in-out 0.3s;
   -moz-transition: ease-in-out 0.3s;
   -o-transition: ease-in-out 0.3s;
@@ -106,6 +131,38 @@ body {
 
 .carousel-caption>button:hover {
   background-color: #FFFFFF;
-  color: #000000;
   border: 2px solid #FFFFFF;
+  color: #000;
+}
+
+#bodyContent {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#homeText1 {
+  width: 60%;
+}
+
+#homeText1>h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#homeText1>p>span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#homeText1>p {
+  font-size: 17px;
+}
+
+#profileImage {
+  float: right;
+}
+
+#profileImage>img {
+  width: 250px;
 }
