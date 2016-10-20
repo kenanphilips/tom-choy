@@ -208,8 +208,7 @@ h1 {
 
 #socialMedia>a>i {
   font-size: 30px;
-  padding: 0 5px 20px 5px;
-  padding-top: 10px;
+  padding: 10px 5px 20px 5px;
 }
 
 .fa-facebook-square {
@@ -303,4 +302,9 @@ footer img {
 #footerContent {
   padding-top: 3%;
   padding-bottom: 3%;
+}
+
+#footerSocialMedia>a>i {
+  font-size: 30px;
+  padding: 15px 5px 0 5px;
 }
