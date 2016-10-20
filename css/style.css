@@ -202,6 +202,10 @@ h1 {
   color: #FCB332;
 }
 
+#email {
+  letter-spacing: 2px;
+}
+
 #socialMedia>a>i {
   font-size: 30px;
   padding: 0 5px 20px 5px;
@@ -280,6 +284,16 @@ footer .col-md-2>a {
   display: block;
   padding: 10px 0 10px 0;
   text-decoration: none;
+  color: #384260;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+footer .col-md-2>a:hover {
+  color: #FCB332;
 }
 
 footer img {
@@ -289,8 +303,4 @@ footer img {
 #footerContent {
   padding-top: 3%;
   padding-bottom: 3%;
-}
-
-footer {
-  /*background-color: #384260;*/
 }
