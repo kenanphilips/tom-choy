@@ -88,10 +88,6 @@ body {
   left: 50%;
 }
 
-#slide1 {
-  width: 100%;
-}
-
 .carousel-caption>h1 {
   text-transform: uppercase;
   font-weight: 500;
@@ -139,28 +135,29 @@ body {
   margin-top: 5%;
 }
 
-.homeText {
+.home-text {
   width: 60%;
 }
 
-.homeText>h1 {
+.home-text>h1 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
-.homeText>p>span {
+.home-text>p>span {
   font-weight: bold;
   font-size: 20px;
 }
 
-.homeText>p {
+.home-text>p {
   font-size: 17px;
 }
 
-.homeText {
+.home-text {
   margin-bottom: 40px;
 }
+
 #profileImage {
   float: right;
 }
@@ -169,28 +166,32 @@ body {
   width: 250px;
 }
 
-button.right {
+#profileInfo {
+  float: right;
+  text-align: center;
+}
+
+#profileInfo>h1 {
+  margin-top: 0;
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
-  align-items: center;
 }
 
-#buttons {
-  margin-top: 30px;
+#profileInfo>a {
+  font-size: 20px;
 }
 
+#socialMedia>a>i {
+  font-size: 30px;
+  padding: 0 10px 0 10px
+}
 
 /* Quote Carousel */
 #quote-carousel {
     padding: 0 10px 30px 10px;
     margin-top: 30px;
-    background-color: grey;
-    /* Control buttons  */
-    /* Previous button  */
-    /* Next button  */
-    /* Changes the position of the indicators */
-    /* Changes the color of the indicators */
+    background-color: #384260;
+    width: 100%;
 }
 
 #quote-carousel .carousel-control {
@@ -216,52 +217,27 @@ button.right {
   letter-spacing: 2px;
   text-align: center;
   padding-top: 70px;
+  color: #FFFFFF;
 }
 
 #quote-carousel.carousel.slide {
   padding: 0 200px 30px 200px;
 }
-/*#quote-carousel .carousel-indicators {
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-right: -19px;
-}
-
-#quote-carousel .carousel-indicators li {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    cursor: pointer;
-    border: 4px solid #CCC;
-    border-radius: 50px;
-    opacity: 0.4;
-    overflow: hidden;
-    transition: all 0.4s;
-}
-
-#quote-carousel .carousel-indicators .active {
-    background: #333333;
-    width: 128px;
-    height: 128px;
-    border-radius: 100px;
-    border-color: #f33;
-    opacity: 1;
-    overflow: hidden;
-}*/
 
 .carousel-inner {
     min-height: 150px;
 }
 
-.item blockquote {
-    border-left: none;
-    margin-top: 10px;
+blockquote {
+	border-left: none;
 }
 
-.item blockquote p:before {
-    font-family: FontAwesome;
-    content: "\f10d";
-    float: left;
-    margin-right: 10px;
+blockquote p {
+  color: #FFFFFF;
+  text-align: center;
+  font-style: italic;
+}
+
+blockquote .small, blockquote footer, blockquote small {
+  color: #FCB332;
 }
