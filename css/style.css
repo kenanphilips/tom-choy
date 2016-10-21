@@ -279,6 +279,10 @@ blockquote .small, blockquote footer, blockquote small {
   color: #FCB332;
 }
 
+.fa-chevron-left:before, .fa-chevron-right:before {
+  color: #FFFFFF;
+}
+
 footer .col-md-2>a {
   display: block;
   padding: 10px 0 10px 0;
